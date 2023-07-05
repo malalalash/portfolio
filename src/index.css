@@ -31,19 +31,8 @@
 }
 
 .about-info {
-  @apply max-w-lg  md:text-base lg:text-lg text-white text-base px-5 text-center md:text-left
+  @apply max-w-lg  md:text-base lg:text-lg text-white text-base px-5 text-center md:text-left;
 }
-
-
-/* @media (min-width: 768px) {
-  .bg-projects {
-    background: linear-gradient(
-      165deg,
-      rgb(255, 255, 255) 50%,
-      rgb(139 92 246) 50%
-    );
-  }
-} */
 
 .heading {
   @apply text-4xl md:text-5xl uppercase text-center font-bold tracking-wider;
@@ -51,4 +40,10 @@
 
 .input {
   @apply rounded-lg p-2 lg:p-3 focus:outline-none focus:ring-2 focus:ring-violet-400 pl-3 border shadow-inner;
+}
+
+html,
+body,
+#root {
+  overflow-x: hidden;
 }
