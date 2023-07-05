@@ -42,8 +42,4 @@
   @apply rounded-lg p-2 lg:p-3 focus:outline-none focus:ring-2 focus:ring-violet-400 pl-3 border shadow-inner;
 }
 
-html,
-body,
-#root {
-  overflow-x: hidden;
-}
+

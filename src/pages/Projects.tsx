@@ -2,6 +2,7 @@ import data from "../data/data";
 import Project from "../components/Project";
 import { useContext } from "react";
 import { LangContext } from "../context/LanguageContext";
+
 const Projects = () => {
   const { lang } = useContext(LangContext);
   return (
