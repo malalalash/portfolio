@@ -57,7 +57,7 @@ const Home = () => {
           {icons.map((icon, index) => (
             <img
               src={icon}
-              alt="icon image"
+              alt={icon}
               key={index}
               className=" bg-gray-50 p-3 rounded-full object-contain shadow"
             />
