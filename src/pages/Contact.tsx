@@ -53,28 +53,35 @@ const Contact = () => {
         onSubmit={sendEmail}
         className="container relative flex flex-col max-w-4xl mx-auto p-10 gap-5 mb-10"
       >
+        <label htmlFor="name" className="md:text-lg font-semibold text-base">
+          {lang === "pl" ? "Imię" : "Name"}
+        </label>
         <input
           required
           type="text"
           id="name"
           name="user_name"
-          placeholder={`${lang === "pl" ? "Imię" : "Name"}`}
+          placeholder={`${lang === "pl" ? "Twoje imię..." : "Your name..."}`}
           className="input"
         />
-
+        <label htmlFor="email" className="md:text-lg font-semibold text-base">
+          {lang === "pl" ? "Email" : "Email"}
+        </label>
         <input
           id="email"
           required
           type="email"
           name="user_email"
-          placeholder="Email"
+          placeholder="email@example.com"
           className="input"
         />
-
+        <label htmlFor="message" className="md:text-lg font-semibold text-base">
+          {lang === "pl" ? "Wiadomość" : "Message"}
+        </label>
         <textarea
           id="message"
           required
-          placeholder={`${lang === "pl" ? "Wiadomość" : "Message"}`}
+          placeholder={`${lang === "pl" ? "Wiadomość..." : "Message..."}`}
           name="message"
           rows={5}
           className="input resize-none"
