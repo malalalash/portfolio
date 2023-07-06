@@ -9,8 +9,8 @@ import gb from "../assets/flag-gb.svg";
 import { LangContext } from "../context/LanguageContext";
 
 const Nav = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
-  const [scroll, setScroll] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [scroll, setScroll] = useState(false);
   const { lang, setLang } = useContext(LangContext);
 
   const handleOpen = () => {
