@@ -17,6 +17,8 @@ interface DataProps {
 
 const Project = ({ data }: { data: DataProps }) => {
   const { lang } = useContext(LangContext);
+  const { id, title, img, description, github, demo, stack, descriptionEn } =
+    data;
 
   return (
     <motion.div
@@ -29,23 +31,23 @@ const Project = ({ data }: { data: DataProps }) => {
       <div className="flex flex-col text-center">
         <h3 className="text-2xl font-semibold pb-5">{data.title}</h3>
         <p className=" max-w-md md:max-w-sm  pb-5 text-base lg:text-lg">
-          {lang === "pl" ? data.description : data.descriptionEn}
+          {lang === "pl" ? description : descriptionEn}
         </p>
         <div className="flex flex-wrap items-center text-white justify-center gap-3 text-sm mb-5 max-w-md md:max-w-sm">
-          {data.stack.map((item, i) => (
+          {stack.map((item) => (
             <span
               className="border border-violet-800 p-1 font-semibold bg-violet-600"
-              key={i}
+              key={id}
             >
               {item}
             </span>
           ))}
         </div>
         <ul className="lg:hidden items-center flex justify-center mb-5">
-          {data.github && (
+          {github && (
             <li>
               <a
-                href={data.github}
+                href={github}
                 target="_blank"
                 className="flex hover:text-violet-600 font-semibold pr-2 items-center text-black group-hover:opacity-100 transition duration-500 cursor-pointer"
               >
@@ -58,7 +60,7 @@ const Project = ({ data }: { data: DataProps }) => {
           )}
           <li>
             <a
-              href={data.demo}
+              href={demo}
               target="_blank"
               className="ml-2 flex hover:text-violet-600 font-semibold items-center text-black group-hover:opacity-100 transition duration-500 cursor-pointer"
             >
@@ -73,14 +75,14 @@ const Project = ({ data }: { data: DataProps }) => {
       <div className="w-full group max-w-sm flex items-center justify-center h-[250px] md:max-w-md rounded-2xl bg-cover bg-no-repeat relative overflow-hidden shadow-lg border">
         <img
           className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-          src={data.img}
-          alt={data.title}
+          src={img}
+          alt={title}
         />
         <div className="absolute w-full h-full transition duration-500 group-hover:bg-black/80">
           <div className="lg:flex items-center hidden justify-center h-full">
-            {data.github && (
+            {github && (
               <a
-                href={data.github}
+                href={github}
                 target="_blank"
                 className="opacity-0 flex hover:text-violet-600 font-semibold pr-2 items-center text-white group-hover:opacity-100 transition duration-500 cursor-pointer"
               >
@@ -91,7 +93,7 @@ const Project = ({ data }: { data: DataProps }) => {
               </a>
             )}
             <a
-              href={data.demo}
+              href={demo}
               target="_blank"
               className="opacity-0 ml-2 flex hover:text-violet-600 font-semibold items-center text-white group-hover:opacity-100 transition duration-500 cursor-pointer"
             >
