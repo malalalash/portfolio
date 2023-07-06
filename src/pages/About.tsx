@@ -13,7 +13,7 @@ const About = () => {
     >
       <article className="container max-w-4xl mx-auto">
         <h2 className="heading text-white">
-          {lang === "pl" ? "O mnie" : "About"}
+          {lang === "pl" ? "O mnie" : "About Me"}
         </h2>
         <div className="flex flex-col-reverse items-center md:items-start md:flex-row justify-center lg:justify-between w-full mx-auto">
           <img
