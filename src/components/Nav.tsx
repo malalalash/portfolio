@@ -160,7 +160,7 @@ const Nav = () => {
               <button
                 className="max-w-[30px] hover:-translate-y-[1px] transform duration-300"
                 onClick={() => {
-                  setLang("gb");
+                  setLang("en");
                 }}
               >
                 <img
@@ -258,7 +258,7 @@ const Nav = () => {
               <button
                 className="max-w-[30px]"
                 onClick={() => {
-                  setLang("gb");
+                  setLang("en");
                   handleOpen();
                 }}
               >

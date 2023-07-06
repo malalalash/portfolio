@@ -19,13 +19,13 @@ const Home = () => {
     >
       <div className="container  max-w-3xl flex flex-col lg:flex-row items-center justify-between">
         <div className="text-center lg:text-start max-w-sm">
-          <h2 className="text-lg sm:text-2xl lg:text-3xl">
+          <h1 className="text-lg sm:text-2xl lg:text-3xl">
             {lang === "pl" ? "Cześć, jestem " : "Hello, I'm "}
             <span className="text-violet-600 font-semibold">Mikołaj.</span>
-          </h2>
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">
-            Front-end Developer
           </h1>
+          <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold">
+            Front-end Developer
+          </h2>
           <div className="flex gap-1 items-center justify-center lg:justify-start mt-5">
             <a
               href="https://www.linkedin.com/in/mikolaj-malarczyk/"

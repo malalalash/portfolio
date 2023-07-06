@@ -19,6 +19,7 @@ export const LangProvider: React.FC<LangProviderProps> = ({ children }) => {
 
   const changeLang = (lang: string) => {
     setLang(lang);
+    document.documentElement.lang = lang;
   };
 
   const value = {
@@ -26,7 +27,5 @@ export const LangProvider: React.FC<LangProviderProps> = ({ children }) => {
     setLang: changeLang,
   };
 
-  return (
-    <LangContext.Provider value={value}>{children}</LangContext.Provider>
-  );
+  return <LangContext.Provider value={value}>{children}</LangContext.Provider>;
 };
