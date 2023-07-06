@@ -95,55 +95,65 @@ const Nav = () => {
             </button>
           </div>
 
-          <div className="md:flex items-center mr-5 gap-2 hidden text-base md:text-lg font-medium">
-            <Link
-              to="home"
-              isDynamic={true}
-              smooth={true}
-              duration={800}
-              offset={-230}
-              className="nav-link"
-              activeClass="active"
-              spy
-            >
-              {lang === "pl" ? "Start" : "Home"}
-            </Link>
-            <Link
-              to="about"
-              isDynamic={true}
-              smooth={true}
-              duration={600}
-              offset={-50}
-              className="nav-link"
-              activeClass="active"
-              spy
-            >
-              {lang === "pl" ? "O mnie" : "About"}
-            </Link>
-            <Link
-              to="projects"
-              isDynamic={true}
-              smooth={true}
-              duration={700}
-              offset={-50}
-              className="nav-link"
-              activeClass="active"
-              spy
-            >
-              {lang === "pl" ? "Projekty" : "Projects"}
-            </Link>
-            <Link
-              to="contact"
-              isDynamic={true}
-              smooth={true}
-              duration={800}
-              offset={100}
-              className="nav-link"
-              activeClass="active"
-              spy
-            >
-              {lang === "pl" ? "Kontakt" : "Contact"}
-            </Link>
+          <div className="md:flex items-center mr-5 hidden text-base md:text-lg font-medium">
+            <ul className="flex gap-2">
+              <li>
+                <Link
+                  to="home"
+                  isDynamic={true}
+                  smooth={true}
+                  duration={800}
+                  offset={-230}
+                  className="nav-link"
+                  activeClass="active"
+                  spy
+                >
+                  {lang === "pl" ? "Start" : "Home"}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="about"
+                  isDynamic={true}
+                  smooth={true}
+                  duration={600}
+                  offset={-50}
+                  className="nav-link"
+                  activeClass="active"
+                  spy
+                >
+                  {lang === "pl" ? "O mnie" : "About"}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="projects"
+                  isDynamic={true}
+                  smooth={true}
+                  duration={700}
+                  offset={-50}
+                  className="nav-link"
+                  activeClass="active"
+                  spy
+                >
+                  {lang === "pl" ? "Projekty" : "Projects"}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="contact"
+                  isDynamic={true}
+                  smooth={true}
+                  duration={800}
+                  offset={100}
+                  className="nav-link"
+                  activeClass="active"
+                  spy
+                >
+                  {lang === "pl" ? "Kontakt" : "Contact"}
+                </Link>
+              </li>
+            </ul>
             <div className="pl-5 py-2 flex gap-2">
               <button
                 className="max-w-[30px] hover:-translate-y-[1px] transform duration-300"
@@ -185,62 +195,71 @@ const Nav = () => {
             exit={"closed"}
             initial="closed"
             className={`md:hidden border-b z-50 w-full pt-4 ${
-              isOpen ? "bg-white" : ""
+              isOpen ? "bg-white" : "hidden"
             }`}
           >
-            <div className="flex flex-col bg-transparent items-center gap-2 text-base font-medium">
-              <Link
-                to="home"
-                isDynamic={true}
-                smooth={true}
-                duration={800}
-                offset={-390}
-                className="nav-link-mobile"
-                activeClass="active-mobile"
-                spy
-                onClick={handleOpen}
-              >
-                {lang === "pl" ? "Start" : "Home"}
-              </Link>
-              <Link
-                to="about"
-                isDynamic={true}
-                smooth={true}
-                duration={600}
-                offset={-300}
-                className="nav-link-mobile"
-                activeClass="active-mobile"
-                spy
-                onClick={handleOpen}
-              >
-                {lang === "pl" ? "O mnie" : "About"}
-              </Link>
-              <Link
-                to="projects"
-                isDynamic={true}
-                smooth={true}
-                duration={700}
-                offset={-320}
-                className="nav-link-mobile"
-                activeClass="active-mobile"
-                spy
-                onClick={handleOpen}
-              >
-                {lang === "pl" ? "Projekty" : "Projects"}
-              </Link>
-              <Link
-                to="contact"
-                isDynamic={true}
-                smooth={true}
-                duration={800}
-                className="nav-link-mobile"
-                activeClass="active-mobile"
-                spy
-                onClick={handleOpen}
-              >
-                {lang === "pl" ? "Kontakt" : "Contact"}
-              </Link>
-            </div>
+            <ul className="flex flex-col bg-transparent items-start gap-2 text-base font-medium">
+              <li className="w-full">
+                <Link
+                  to="home"
+                  isDynamic={true}
+                  smooth={true}
+                  duration={800}
+                  offset={-390}
+                  className="nav-link-mobile"
+                  activeClass="active-mobile"
+                  spy
+                  onClick={handleOpen}
+                >
+                  {lang === "pl" ? "Start" : "Home"}
+                </Link>
+              </li>
+              <li className="w-full">
+                <Link
+                  to="about"
+                  isDynamic={true}
+                  smooth={true}
+                  duration={600}
+                  offset={-300}
+                  className="nav-link-mobile"
+                  activeClass="active-mobile"
+                  spy
+                  onClick={handleOpen}
+                >
+                  {lang === "pl" ? "O mnie" : "About"}
+                </Link>
+              </li>
+              <li className="w-full">
+                {" "}
+                <Link
+                  to="projects"
+                  isDynamic={true}
+                  smooth={true}
+                  duration={700}
+                  offset={-320}
+                  className="nav-link-mobile"
+                  activeClass="active-mobile"
+                  spy
+                  onClick={handleOpen}
+                >
+                  {lang === "pl" ? "Projekty" : "Projects"}
+                </Link>
+              </li>
+              <li className="w-full">
+                <Link
+                  to="contact"
+                  isDynamic={true}
+                  smooth={true}
+                  duration={800}
+                  className="nav-link-mobile"
+                  activeClass="active-mobile"
+                  spy
+                  onClick={handleOpen}
+                >
+                  {lang === "pl" ? "Kontakt" : "Contact"}
+                </Link>
+              </li>
+            </ul>
             <div className="pl-5 py-2 flex gap-2">
               <button
                 className="max-w-[30px]"

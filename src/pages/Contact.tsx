@@ -56,18 +56,23 @@ const Contact = () => {
         <input
           required
           type="text"
+          id="name"
           name="user_name"
           placeholder={`${lang === "pl" ? "Imię" : "Name"}`}
           className="input"
         />
+
         <input
+          id="email"
           required
           type="email"
           name="user_email"
           placeholder="Email"
           className="input"
         />
+
         <textarea
+          id="message"
           required
           placeholder={`${lang === "pl" ? "Wiadomość" : "Message"}`}
           name="message"

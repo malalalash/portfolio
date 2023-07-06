@@ -30,7 +30,7 @@ const Home = () => {
             <a
               href="https://www.linkedin.com/in/mikolaj-malarczyk/"
               target="_blank"
-              className="social"
+              className="social "
             >
               <SiLinkedin size={30} />
             </a>

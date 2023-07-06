@@ -21,7 +21,7 @@
 }
 
 .social {
-  @apply hover:text-violet-600 mx-1 transition ease-in-out duration-200;
+  @apply hover:text-violet-600 mx-1 transition ease-in-out duration-200 border-none outline-none focus:ring-violet-400 focus:ring;
 }
 
 @media (min-width: 768px) {

@@ -11,7 +11,7 @@ const About = () => {
       id="about"
       className="w-full  bg-gradient-to-tr from-violet-500 to-violet-600 flex items-start justify-center pt-20 relative clip min-h-[70vh] md:pb-10"
     >
-      <div className="container max-w-4xl mx-auto">
+      <article className="container max-w-4xl mx-auto">
         <h2 className="heading text-white">
           {lang === "pl" ? "O mnie" : "About"}
         </h2>
@@ -35,7 +35,7 @@ const About = () => {
             </p>
           </div>
         </div>
-      </div>
+      </article>
     </section>
   );
 };

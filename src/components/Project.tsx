@@ -27,7 +27,7 @@ const Project = ({ data }: { data: Data }) => {
       className="mb-5 p-5  flex items-center rounded-3xl  shadow-inner justify-between flex-col lg:flex-row w-full"
     >
       <div className="flex flex-col text-center">
-        <h2 className="text-2xl font-semibold pb-5">{data.title}</h2>
+        <h3 className="text-2xl font-semibold pb-5">{data.title}</h3>
         <p className=" max-w-md md:max-w-sm  pb-5 text-base lg:text-lg">
           {lang === "pl" ? data.description : data.descriptionEn}
         </p>
@@ -41,30 +41,34 @@ const Project = ({ data }: { data: Data }) => {
             </span>
           ))}
         </div>
-        <div className="lg:hidden items-center flex justify-center mb-5">
+        <ul className="lg:hidden items-center flex justify-center mb-5">
           {data.github && (
+            <li>
+              <a
+                href={data.github}
+                target="_blank"
+                className="flex hover:text-violet-600 font-semibold pr-2 items-center text-black group-hover:opacity-100 transition duration-500 cursor-pointer"
+              >
+                <span className="flex items-center pr-1 text-lg sm:text-xl">
+                  {lang === "pl" ? "Kod" : "Code"}
+                </span>
+                <SiGithub size={22} />
+              </a>
+            </li>
+          )}
+          <li>
             <a
-              href={data.github}
+              href={data.demo}
               target="_blank"
-              className="flex hover:text-violet-600 font-semibold pr-2 items-center text-black group-hover:opacity-100 transition duration-500 cursor-pointer"
+              className="ml-2 flex hover:text-violet-600 font-semibold items-center text-black group-hover:opacity-100 transition duration-500 cursor-pointer"
             >
               <span className="flex items-center pr-1 text-lg sm:text-xl">
-                {lang === "pl" ? "Kod" : "Code"}
+                {lang === "pl" ? "Demo" : "See Live"}
               </span>
-              <SiGithub size={22} />
+              <MdOpenInNew size={22} />
             </a>
-          )}
-          <a
-            href={data.demo}
-            target="_blank"
-            className="ml-2 flex hover:text-violet-600 font-semibold items-center text-black group-hover:opacity-100 transition duration-500 cursor-pointer"
-          >
-            <span className="flex items-center pr-1 text-lg sm:text-xl">
-              {lang === "pl" ? "Demo" : "See Live"}
-            </span>
-            <MdOpenInNew size={22} />
-          </a>
-        </div>
+          </li>
+        </ul>
       </div>
       <div className="w-full group max-w-sm flex items-center justify-center h-[250px] md:max-w-md rounded-2xl bg-cover bg-no-repeat relative overflow-hidden shadow-lg border">
         <img
