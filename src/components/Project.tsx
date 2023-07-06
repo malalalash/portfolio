@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { LangContext } from "../context/LanguageContext";
 import { motion } from "framer-motion";
 
-interface Data {
+interface DataProps {
   id: number;
   title: string;
   img: string;
@@ -15,7 +15,7 @@ interface Data {
   descriptionEn: string;
 }
 
-const Project = ({ data }: { data: Data }) => {
+const Project = ({ data }: { data: DataProps }) => {
   const { lang } = useContext(LangContext);
 
   return (
