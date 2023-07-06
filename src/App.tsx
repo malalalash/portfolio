@@ -1,9 +1,9 @@
-import Footer from "./components/Footer";
-import Nav from "./components/Nav";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
+import Footer from "./components/Footer/Footer";
+import Nav from "./components/Nav/Nav";
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
+import Home from "./components/Home/Home";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   return (

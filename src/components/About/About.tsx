@@ -1,8 +1,8 @@
-import about from "../assets/aboutimg.png";
+import about from "../../assets/aboutimg.png";
 import { useContext } from "react";
-import { LangContext } from "../context/LanguageContext";
-import aboutText from "../data/aboutText";
-import { AboutTextType } from "../types/aboutTypes";
+import { LangContext } from "../../context/LanguageContext";
+import aboutText from "../../data/aboutText";
+import { AboutTextType } from "../../types/aboutTypes";
 const About = () => {
   const data: AboutTextType = aboutText;
   const { lang } = useContext(LangContext);

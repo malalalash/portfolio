@@ -1,7 +1,7 @@
 import { SiGithub } from "react-icons/si";
 import { MdOpenInNew } from "react-icons/md";
 import { useContext } from "react";
-import { LangContext } from "../context/LanguageContext";
+import { LangContext } from "../../context/LanguageContext";
 import { motion } from "framer-motion";
 
 interface DataProps {

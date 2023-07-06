@@ -1,6 +1,6 @@
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { useContext } from "react";
-import { LangContext } from "../context/LanguageContext";
+import { LangContext } from "../../context/LanguageContext";
 import { Link } from "react-scroll";
 import { IoIosArrowUp } from "react-icons/io";
 

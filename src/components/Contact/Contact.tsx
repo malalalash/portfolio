@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import { forEach } from "lodash";
 import { motion, AnimatePresence } from "framer-motion";
 import { useContext } from "react";
-import { LangContext } from "../context/LanguageContext";
+import { LangContext } from "../../context/LanguageContext";
 const Contact = () => {
   const form = useRef<HTMLFormElement | null>(null);
   const { lang } = useContext(LangContext);

@@ -1,7 +1,7 @@
-import data from "../data/data";
-import Project from "../components/Project";
+import data from "../../data/data";
+import Project from "../Project/Project";
 import { useContext } from "react";
-import { LangContext } from "../context/LanguageContext";
+import { LangContext } from "../../context/LanguageContext";
 
 const Projects = () => {
   const { lang } = useContext(LangContext);

@@ -1,12 +1,12 @@
-import profile from "../assets/av.png";
+import profile from "../../assets/av.png";
 import { SiGithub, SiLinkedin } from "react-icons/si";
-import html from "../assets/html5.svg";
-import css from "../assets/css.svg";
-import js from "../assets/javascript.svg";
-import react from "../assets/react.svg";
-import tailwindcss from "../assets/tailwindcss.svg";
+import html from "../../assets/html5.svg";
+import css from "../../assets/css.svg";
+import js from "../../assets/javascript.svg";
+import react from "../../assets/react.svg";
+import tailwindcss from "../../assets/tailwindcss.svg";
 import { useContext } from "react";
-import { LangContext } from "../context/LanguageContext";
+import { LangContext } from "../../context/LanguageContext";
 
 const Home = () => {
   const icons: Array<string> = [html, css, js, react, tailwindcss];
