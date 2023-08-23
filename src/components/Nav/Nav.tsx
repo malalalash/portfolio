@@ -74,9 +74,9 @@ const Nav = () => {
             smooth={true}
             duration={800}
             offset={-230}
-            className="cursor-pointer ml-5 text-3xl md:text-4xl lg:text-5xl font-bkack-ops"
+            className="cursor-pointer ml-5 text-3xl lg:text-4xl xl:text-5xl font-bkack-ops"
           >
-            Mikolaj<span className="text-violet-600">.dev</span>
+            MMalarczyk<span className="text-violet-600">.dev</span>
           </Link>
           <div className="flex md:hidden mr-5 items-center justify-center">
             <button
@@ -95,8 +95,8 @@ const Nav = () => {
             </button>
           </div>
 
-          <div className="md:flex items-center mr-5 hidden text-base md:text-lg font-medium">
-            <ul className="flex gap-2">
+          <div className="md:flex items-center mr-5 hidden text-base lg:text-lg font-medium">
+            <ul className="flex gap-1">
               <li>
                 <Link
                   to="home"
