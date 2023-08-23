@@ -2,6 +2,7 @@ import memoryss from "../assets/memoryss.png";
 import recipeess from "../assets/recipeess.png";
 import izomakss from "../assets/izomakss.png";
 import weatherss from "../assets/weatherss.png";
+import getinheress from "../assets/getinheress.png";
 
 const projects = [
   {
@@ -58,6 +59,24 @@ const projects = [
     ],
     descriptionEn:
       "Weather APP - an application that provides current and future weather information.",
+  },
+  {
+    id: 5,
+    title: "Get In Here",
+    img: getinheress,
+    description: "Get In Here to aplikacja społecznościowa.",
+    github: "https://github.com/malalalash/social-media-PERN",
+    demo: "https://getinhere.pl",
+    stack: [
+      "React",
+      "React Router",
+      "React Query",
+      "Tailwind",
+      "Node/Express",
+      "Postgresql",
+      "Cloudinary",
+    ],
+    descriptionEn: "Get In Here is a social media app.",
   },
 ];
 
